@@ -131,11 +131,11 @@ class fuelParser:
                             "span", style=["text-align:right;", "text-align:left;"]
                         )
                         if priceSegments:
-                        products[productKey] = self._addPriceToProduct(
-                            productDict,
-                            priceSegments[0].text + "." + priceSegments[1].text,
-                        )
-        return products
+                            products[productKey] = self._addPriceToProduct(
+                                productDict,
+                                priceSegments[0].text + "." + priceSegments[1].text,
+                            )
+                    return products
 
     # INGO
     def ingo(self, url, products):
